@@ -258,8 +258,13 @@
   . database를 생성해서 사용할 수 있도록 한다
   
   . 따릉이 관리 시스템에서 따릉이 등록이 정상적으로 수행되는 것을 확인한다.
+    1번 bike가 자동증가로 등록이 된 것을 확인한다.
   
+![image](https://user-images.githubusercontent.com/2344829/217457894-ce231a2a-bcc1-44cd-aab0-39061aa00df7.png)
 
+  . pod 와 mysql 서비스를 재가동 후 동일하게 수행 시 2번 bike 부터 입력이 되는 것을 확인한다
+  
+![image](https://user-images.githubusercontent.com/2344829/217458387-db1e0c74-28ba-496c-8bdb-3154f1fdf0c7.png)
 
 
 ## 
