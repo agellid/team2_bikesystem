@@ -211,6 +211,30 @@
 ![image](https://user-images.githubusercontent.com/2344829/217442482-d09e678e-090a-417e-b85f-49fb28ac3b77.png)
 
 
+ 4. ConfigMap 사용
+  . 개발/운영 환경을 구분하기 위한 landscape 라는 환경 변수를 임의로 가정하고 진행
+  
+
+  . configmap 생성 후 deply
+
+![image](https://user-images.githubusercontent.com/2344829/217449339-277ee824-e66b-4e1d-b200-e076cb0a06ed.png)
+
+
+    kubectl apply -f configmap.yaml
+    
+![image](https://user-images.githubusercontent.com/2344829/217449560-8a6f7830-c60c-4e8c-a3f5-dd40be44505a.png)
+
+  . deployment 에 configmap의 landscape 항목 반영
+  
+![image](https://user-images.githubusercontent.com/2344829/217449757-6ad77a01-8b6d-4fdf-8c64-ba41850b2c32.png)
+
+  . pod 반영 후 정상적으로 수행 됨 확인
+  
+![image](https://user-images.githubusercontent.com/2344829/217450151-46d0154e-7a56-4dfc-bd7e-1170ffbf6900.png)
+
+
+![image](https://user-images.githubusercontent.com/2344829/217450272-d0d2cc28-8a24-404d-b3bd-c8fe4b19a34f.png)
+
 
 ## 
   
