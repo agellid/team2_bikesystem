@@ -171,11 +171,15 @@
   
     1) image version up / push
     
-    ![image](https://user-images.githubusercontent.com/2344829/217439532-5352bccb-b7ae-45dd-b991-f5cb2fbfb1b9.png)
+![image](https://user-images.githubusercontent.com/2344829/217439532-5352bccb-b7ae-45dd-b991-f5cb2fbfb1b9.png)
   
     2) 등록 시스템에 siege 부하를 통해 pod를 3개까지 증가 시킴
     
-    ![image](https://user-images.githubusercontent.com/2344829/217439678-44058d37-91c1-4e5a-85fb-86cd0029d302.png)
+![image](https://user-images.githubusercontent.com/2344829/217439678-44058d37-91c1-4e5a-85fb-86cd0029d302.png)
+
+
+
+
 
 
 
