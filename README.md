@@ -175,8 +175,21 @@
   
     2) 등록 시스템에 siege 부하를 통해 pod를 3개까지 증가 시킴
     
-![image](https://user-images.githubusercontent.com/2344829/217439678-44058d37-91c1-4e5a-85fb-86cd0029d302.png)
+![image](https://user-images.githubusercontent.com/2344829/217440001-ca1aa679-4d7d-41e9-9dee-2db53d0c18d3.png)
 
+![image](https://user-images.githubusercontent.com/2344829/217440085-48be1bec-03e7-4e4a-a973-a436bf7ea3b6.png)
+
+    3) siege 에서 부하를 주면서 새로운 image의 deploy 실행
+    
+![image](https://user-images.githubusercontent.com/2344829/217440228-e4cf13cc-1765-4de9-b7da-72cf6ef843e8.png)
+
+![image](https://user-images.githubusercontent.com/2344829/217440302-fbcdf499-6b92-4a86-a472-9ccf49768ca8.png)
+
+    4) deploy 기간 중 pod가 교체 되는 부분 확인 및 siege 의 요청이 모두 available 했음을 확인
+    
+![image](https://user-images.githubusercontent.com/2344829/217440493-964b4a67-7700-4562-9c49-78da580e9128.png)
+
+![image](https://user-images.githubusercontent.com/2344829/217440730-27702040-a7e2-49c8-9152-98add34c9e85.png)
 
 
 
