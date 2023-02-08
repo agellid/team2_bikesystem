@@ -236,22 +236,16 @@ x-envoy-upstream-service-time: 574
 ![image](https://user-images.githubusercontent.com/2344829/217410023-c5b80db4-03dd-4d4e-9ce2-7e19464ccafe.png)
  
  
+      point 시스템에서 차감 확인
+ 
+ ![image](https://user-images.githubusercontent.com/2344829/217411525-1c1e3984-6c65-4c9d-b16f-56c2de282aae.png)
+ 
       
-      [pub/sub] point 시스템에 userId 10의 Point 차감 확인     
-           
-            http localhost:8083/points/10
+     [CQRS] 예약DashBoard 에서 예약 현황 확인
       
-      [CQRS] 예약DashBoard 에서 예약 현황 확인
-      
-           http localhost:8085/reservationDashboards
-           
-           * 예약시스템 마이크로서비스 종료 후 재확인
-           
-           http localhost:8085/reservationDashboards
-   
-   4) gateway를 통한 시나리오 확인
-   
-           http localhost:8088/managements → http localhost:8084/managements
+![image](https://user-images.githubusercontent.com/2344829/217411732-efca23c3-02d3-4761-b2e2-fc2524ab1302.png)
+
+ 
           
   ...
   
