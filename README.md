@@ -39,8 +39,8 @@
  
   1) 따릉이의 등록
   2) 결재시스템 결재 후 포인트 시스템에서 포인트 증가
-  3) 예약시스템 결재 시 포인트 시스템에서 포인트 차감
-  4) 얘약시스템 결재 시 Dashboard에 반영
+  3) 예약시스템 예약 시 포인트 시스템에서 포인트 차감
+  4) 얘약시스템 예약 시 Dashboard에 반영
 
 ![image](https://user-images.githubusercontent.com/2344829/217412767-34ff261d-2002-4b1c-af23-a66dc2632cfc.png)
 
@@ -78,6 +78,7 @@
     각 서비스의 Container IP와 LoadBalancer 정보는 다음과 같음
     
     
+![image](https://user-images.githubusercontent.com/2344829/217419668-00880f88-b3c9-4be5-b6b0-3d7513b96d51.png)
 
 
 
