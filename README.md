@@ -48,7 +48,25 @@
 ## 구현
 
   . pub/sub를 통해 전달되는 내용을 policy에서 구현
-  
+
+  1. 결재시스템 결재 완료 시 userId 기준 point 시스템에 point 증가
+     신규 사용자의 경우 insert 로직으로
+     기존 사용자의 경우 기존 point를 update 하여 증가하는 로직
+
+ ![image](https://user-images.githubusercontent.com/2344829/217417905-e6f28b75-70f7-425a-9cc6-1eb4b2e841f9.png)
+
+
+  2. 예약시스템에서 예약 시 정해진 point 1000 이 차감되는 로직
+
+![image](https://user-images.githubusercontent.com/2344829/217418214-be3d3f43-697b-47d5-86d0-b5adbf300659.png)
+
+
+  3. 예약시스템에서 취소 시 point 1000 이 복원되는 로직
+
+![image](https://user-images.githubusercontent.com/2344829/217418343-e9c42cf6-5414-4d08-aef8-af3d05d26afc.png)
+
+
+ 
   
   . 적용 후 테스트 (container 환경)
   
@@ -60,9 +78,6 @@
     각 서비스의 Container IP와 LoadBalancer 정보는 다음과 같음
     
     
-![image](https://user-images.githubusercontent.com/2344829/217415304-314b7530-d77f-478d-b6e8-9f3b5870eae0.png)
- 
-
 
 
 
