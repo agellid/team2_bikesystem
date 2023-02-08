@@ -114,7 +114,33 @@
  
           
   ...
+
+
+## 구현
+
+ 1. Autoscale (HPA)
+ 
+  . 따릉이 등록 시스템에 대해 부하 상황에 max 3개 pod 까지 증가하도록 설정 후 부하 테스트 / 결과 확인
+
+![image](https://user-images.githubusercontent.com/2344829/217416791-df92b169-1602-4fe8-b872-44e99adb5f89.png)
+
+
+
+![image](https://user-images.githubusercontent.com/2344829/217416702-87e0da3b-84b5-4e31-80b5-519a75a9a33c.png)
+
+
+
+![image](https://user-images.githubusercontent.com/2344829/217416636-46657225-90f2-44fa-900f-bae53f13e969.png)
+
+
+ 2. Monitoring
+
+  . 위 Autoscale 상황에서의 시스템 상황 모니터링
   
+  ![image](https://user-images.githubusercontent.com/2344829/217417027-a7025029-be25-46ae-a2a4-c713a7d52120.png)
+
+
+
 ## 
   
   
