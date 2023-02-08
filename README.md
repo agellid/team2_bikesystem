@@ -158,15 +158,25 @@ gitpod /workspace/team2_bikesystem/reservation/kubernetes (main) $
    1) 따릉이관리시스템에서 따릉이의 등록 
    
 root@siege:/# http 10.100.146.187:8080/managements color="red" registeredDate="20230207" 
+ 
 HTTP/1.1 201 Created
+ 
 content-type: application/json
+ 
 date: Wed, 08 Feb 2023 01:57:46 GMT
+ 
 location: http://10.100.146.187/managements/1
+ 
 server: istio-envoy
+ 
 transfer-encoding: chunked
+ 
 vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+ 
 x-envoy-decorator-operation: bikemgmt.kafka.svc.cluster.local:8080/*
+ 
 x-envoy-upstream-service-time: 467
+ 
 
 {
     "_links": {
@@ -187,15 +197,25 @@ x-envoy-upstream-service-time: 467
       결재 (userId 10번으로 Point 3000 결재, 5000 결재 2회 실행)
       
 root@siege:/# http 10.100.181.240:8080/approvals userId="10" price="3000" approveDate="20230207" 
+ 
 HTTP/1.1 201 Created
+ 
 content-type: application/json
+ 
 date: Wed, 08 Feb 2023 01:59:27 GMT
+ 
 location: http://10.100.181.240/approvals/1
+ 
 server: istio-envoy
+ 
 transfer-encoding: chunked
+ 
 vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+ 
 x-envoy-decorator-operation: approval.kafka.svc.cluster.local:8080/*
+ 
 x-envoy-upstream-service-time: 435
+ 
 
 {
     "_links": {
@@ -212,15 +232,25 @@ x-envoy-upstream-service-time: 435
 }
 
 root@siege:/# http 10.100.181.240:8080/approvals userId="10" price="5000" approveDate="20230207" 
+ 
 HTTP/1.1 201 Created
+ 
 content-type: application/json
+ 
 date: Wed, 08 Feb 2023 01:59:43 GMT
+ 
 location: http://10.100.181.240/approvals/2
+ 
 server: istio-envoy
+ 
 transfer-encoding: chunked
+ 
 vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+ 
 x-envoy-decorator-operation: approval.kafka.svc.cluster.local:8080/*
+ 
 x-envoy-upstream-service-time: 19
+ 
 
 {
     "_links": {
@@ -248,15 +278,25 @@ x-envoy-upstream-service-time: 19
       예약 (userId 10번으로 bikeID 1번 예약)
 
 root@siege:/# http POST 10.100.196.39:8080/reservations userId="10" bikeId="1" 
+ 
 HTTP/1.1 201 Created
+ 
 content-type: application/json
+ 
 date: Wed, 08 Feb 2023 02:03:21 GMT
+ 
 location: http://10.100.196.39/reservations/1
+ 
 server: istio-envoy
+ 
 transfer-encoding: chunked
+ 
 vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+ 
 x-envoy-decorator-operation: reservation.kafka.svc.cluster.local:8080/*
+ 
 x-envoy-upstream-service-time: 574
+ 
 
 {
     "_links": {
