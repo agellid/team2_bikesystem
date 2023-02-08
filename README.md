@@ -59,52 +59,95 @@
     
     
 gitpod /workspace/team2_bikesystem/reservation/kubernetes (main) $ kubectl get all
+
 NAME                               READY   STATUS    RESTARTS   AGE
+
 pod/approval-58589868c-6dckn       2/2     Running   0          28m
+
 pod/bikemgmt-cdcb9c5f-kpm4k        2/2     Running   0          30m
+
 pod/dashboard-68847d6b7-nw67h      2/2     Running   0          26m
+
 pod/gateway-6fd6dfd4f9-kptk9       2/2     Running   0          24m
+
 pod/my-kafka-0                     1/1     Running   1          13h
+
 pod/my-kafka-zookeeper-0           1/1     Running   0          13h
+
 pod/point-b656f7984-kj7bp          2/2     Running   0          22m
+
 pod/reservation-658cc95d7b-7dc7t   2/2     Running   0          21m
+
 pod/siege                          1/1     Running   0          135m
 
-NAME                                  TYPE           CLUSTER-IP       EXTERNAL-IP                                                              PORT(S)                      AGE
-service/approval                      ClusterIP      10.100.181.240   <none>                                                                   8080/TCP                     28m
-service/bikemgmt                      ClusterIP      10.100.146.187   <none>                                                                   8080/TCP                     30m
-service/dashboard                     ClusterIP      10.100.244.203   <none>                                                                   8080/TCP                     26m
-service/gateway                       LoadBalancer   10.100.18.170    ad33daaed85a44ed7a1817096c2b22e1-398369829.eu-west-2.elb.amazonaws.com   8080:31423/TCP               24m
-service/my-kafka                      ClusterIP      10.100.62.5      <none>                                                                   9092/TCP                     13h
-service/my-kafka-headless             ClusterIP      None             <none>                                                                   9092/TCP,9093/TCP            13h
-service/my-kafka-zookeeper            ClusterIP      10.100.213.189   <none>                                                                   2181/TCP,2888/TCP,3888/TCP   13h
-service/my-kafka-zookeeper-headless   ClusterIP      None             <none>                                                                   2181/TCP,2888/TCP,3888/TCP   13h
-service/point                         ClusterIP      10.100.18.149    <none>                                                                   8080/TCP                     22m
-service/reservation                   ClusterIP      10.100.196.39    <none>                                                                   8080/TCP                     21m
+
+NAME                                  TYPE           CLUSTER-IP       EXTERNAL-IP                                                              PORT(S)     
+AGE
+service/approval                      ClusterIP      10.100.181.240   <none>                                                                   8080/TCP  28m
+ 
+service/bikemgmt                      ClusterIP      10.100.146.187   <none>                                                                   8080/TCP  30m
+ 
+service/dashboard                     ClusterIP      10.100.244.203   <none>                                                                   8080/TCP  26m
+ 
+service/gateway                       LoadBalancer   10.100.18.170    ad33daaed85a44ed7a1817096c2b22e1-398369829.eu-west-2.elb.amazonaws.com   8080:31423/TCP 24m
+ 
+service/my-kafka                      ClusterIP      10.100.62.5      <none>                                                                   9092/TCP 13h
+ 
+service/my-kafka-headless             ClusterIP      None             <none>                                                                   9092/TCP,9093/TCP 13h
+ 
+service/my-kafka-zookeeper            ClusterIP      10.100.213.189   <none>  2181/TCP,2888/TCP,3888/TCP   13h
+ 
+service/my-kafka-zookeeper-headless   ClusterIP      None             <none>  2181/TCP,2888/TCP,3888/TCP   13h
+ 
+service/point                         ClusterIP      10.100.18.149    <none>                                                                   8080/TCP 22m
+ 
+service/reservation                   ClusterIP      10.100.196.39    <none>                                                                   8080/TCP 21m
+ 
+ 
 
 NAME                          READY   UP-TO-DATE   AVAILABLE   AGE
+ 
 deployment.apps/approval      1/1     1            1           28m
+ 
 deployment.apps/bikemgmt      1/1     1            1           30m
+ 
 deployment.apps/dashboard     1/1     1            1           26m
+ 
 deployment.apps/gateway       1/1     1            1           24m
+ 
 deployment.apps/point         1/1     1            1           22m
+ 
 deployment.apps/reservation   1/1     1            1           21m
+ 
 
 NAME                                     DESIRED   CURRENT   READY   AGE
+ 
 replicaset.apps/approval-58589868c       1         1         1       28m
+ 
 replicaset.apps/bikemgmt-cdcb9c5f        1         1         1       30m
+ 
 replicaset.apps/dashboard-68847d6b7      1         1         1       26m
+ 
 replicaset.apps/gateway-6fd6dfd4f9       1         1         1       24m
+ 
 replicaset.apps/point-b656f7984          1         1         1       22m
+ 
 replicaset.apps/reservation-658cc95d7b   1         1         1       21m
+ 
 
 NAME                                  READY   AGE
+ 
 statefulset.apps/my-kafka             1/1     13h
+ 
 statefulset.apps/my-kafka-zookeeper   1/1     13h
+ 
 
 NAME                                           REFERENCE             TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+ 
 horizontalpodautoscaler.autoscaling/bikemgmt   Deployment/bikemgmt   <unknown>/50%   1         3         1          2m55s
+ 
 gitpod /workspace/team2_bikesystem/reservation/kubernetes (main) $   
+ 
 
 
 
