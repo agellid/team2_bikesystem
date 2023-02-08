@@ -156,6 +156,28 @@
   ![image](https://user-images.githubusercontent.com/2344829/217417027-a7025029-be25-46ae-a2a4-c713a7d52120.png)
 
 
+ 3. liveness, readiness probe 관련 무중단 deploy
+
+  . 모델에서 generate 된 설정을 그대로 사용
+  
+  ![image](https://user-images.githubusercontent.com/2344829/217438610-d6dea3a3-b5df-43ed-aeea-951c8fd9d682.png)
+
+  . liveness probe 조회 화면 (gateway)
+  
+  ![image](https://user-images.githubusercontent.com/2344829/217439095-f458c52d-dd27-4d54-8c10-9a5d4d35363b.png)
+
+
+  . 따릉이 등록 시스템 대상 readiness probe 설정으로 무중단 배포 테스트
+  
+    1) image version up / push
+    
+    ![image](https://user-images.githubusercontent.com/2344829/217439532-5352bccb-b7ae-45dd-b991-f5cb2fbfb1b9.png)
+  
+    2) 등록 시스템에 siege 부하를 통해 pod를 3개까지 증가 시킴
+    
+    ![image](https://user-images.githubusercontent.com/2344829/217439678-44058d37-91c1-4e5a-85fb-86cd0029d302.png)
+
+
 
 ## 
   
