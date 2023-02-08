@@ -38,9 +38,11 @@
  . 완성된 모델에서 기능 검증
  
   1) 따릉이의 등록
-  2) 포인트 결재 후 따릉이 예약
+  2) 결재시스템 결재 후 포인트 시스템에서 포인트 증가
+  3) 예약시스템 결재 시 포인트 시스템에서 포인트 차감
+  4) 얘약시스템 결재 시 Dashboard에 반영
 
-![image](https://user-images.githubusercontent.com/2344829/217236947-a2da20c1-0906-42d0-b874-e100ac646940.png)
+![image](https://user-images.githubusercontent.com/2344829/217412767-34ff261d-2002-4b1c-af23-a66dc2632cfc.png)
 
   
 ## 구현
