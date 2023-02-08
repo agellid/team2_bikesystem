@@ -137,6 +137,10 @@
  1. Autoscale (HPA)
  
   . 따릉이 등록 시스템에 대해 부하 상황에 max 3개 pod 까지 증가하도록 설정 후 부하 테스트 / 결과 확인
+  
+  . HPA 설정
+  
+![image](https://user-images.githubusercontent.com/2344829/217442626-6a7757ab-53a0-4c60-9937-d9f49bb34581.png)
 
 ![image](https://user-images.githubusercontent.com/2344829/217416791-df92b169-1602-4fe8-b872-44e99adb5f89.png)
 
@@ -149,14 +153,8 @@
 ![image](https://user-images.githubusercontent.com/2344829/217416636-46657225-90f2-44fa-900f-bae53f13e969.png)
 
 
- 2. Monitoring
 
-  . 위 Autoscale 상황에서의 시스템 상황 모니터링
-  
-  ![image](https://user-images.githubusercontent.com/2344829/217417027-a7025029-be25-46ae-a2a4-c713a7d52120.png)
-
-
- 3. liveness, readiness probe 관련 무중단 deploy
+ 2. liveness, readiness probe 관련 무중단 deploy
 
   . 모델에서 generate 된 설정을 그대로 사용
   
@@ -177,7 +175,8 @@
     
 ![image](https://user-images.githubusercontent.com/2344829/217440001-ca1aa679-4d7d-41e9-9dee-2db53d0c18d3.png)
 
-![image](https://user-images.githubusercontent.com/2344829/217440085-48be1bec-03e7-4e4a-a973-a436bf7ea3b6.png)
+![image](https://user-images.githubusercontent.com/2344829/217442176-d6d9a1e9-d134-4bdf-9a59-0f83855b7c1e.png)
+
 
     3) siege 에서 부하를 주면서 새로운 image의 deploy 실행
     
@@ -193,6 +192,17 @@
 
 
 
+
+ 3. Monitoring
+
+  . 위 Autoscale / 무중단 deploy 에서 시스템 상황 모니터링
+  
+  ![image](https://user-images.githubusercontent.com/2344829/217417027-a7025029-be25-46ae-a2a4-c713a7d52120.png)
+
+
+![image](https://user-images.githubusercontent.com/2344829/217442358-7ca7d132-6c4a-4439-8415-c30622b125b8.png)
+
+![image](https://user-images.githubusercontent.com/2344829/217442482-d09e678e-090a-417e-b85f-49fb28ac3b77.png)
 
 
 
