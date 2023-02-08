@@ -236,6 +236,32 @@
 ![image](https://user-images.githubusercontent.com/2344829/217450272-d0d2cc28-8a24-404d-b3bd-c8fe4b19a34f.png)
 
 
+5. Persistence Volume / Secret 구현
+
+  . mysql pod를 생성한다.
+  . persistence volume을 사용하게 설정하고, 접속 정보는 Secret를 사용하게 구현한다
+  
+![image](https://user-images.githubusercontent.com/2344829/217456572-7064c083-e3a3-40dc-a1ed-d36623af517a.png)
+
+
+![image](https://user-images.githubusercontent.com/2344829/217456667-c63e06b9-5fc2-4b18-b29a-9911b8b106bc.png)
+
+
+![image](https://user-images.githubusercontent.com/2344829/217456916-decdbe66-394a-4a89-9f68-680fac56eaab.png)
+
+
+![image](https://user-images.githubusercontent.com/2344829/217457025-daef72ce-d9a0-4795-ad43-ba8e38b0dc57.png)
+  
+  
+ ![image](https://user-images.githubusercontent.com/2344829/217457660-2bd7c543-20f1-46b8-a682-c578b4b67a77.png)
+  
+  . database를 생성해서 사용할 수 있도록 한다
+  
+  . 따릉이 관리 시스템에서 따릉이 등록이 정상적으로 수행되는 것을 확인한다.
+  
+
+
+
 ## 
   
   
