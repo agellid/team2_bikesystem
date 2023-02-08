@@ -138,17 +138,22 @@
  
   . 따릉이 등록 시스템에 대해 부하 상황에 max 3개 pod 까지 증가하도록 설정 후 부하 테스트 / 결과 확인
   
-  . HPA 설정
+  1) HPA 설정
   
 ![image](https://user-images.githubusercontent.com/2344829/217442626-6a7757ab-53a0-4c60-9937-d9f49bb34581.png)
 
+  2) 설정 내용 확인 : replica
+  
 ![image](https://user-images.githubusercontent.com/2344829/217416791-df92b169-1602-4fe8-b872-44e99adb5f89.png)
 
-
+  3) siege 에서 부하 시작
 
 ![image](https://user-images.githubusercontent.com/2344829/217416702-87e0da3b-84b5-4e31-80b5-519a75a9a33c.png)
 
+  
+![image](https://user-images.githubusercontent.com/2344829/217442804-ca8dce6a-f635-496e-ab69-350a1d37a5e8.png)
 
+  4) replica 변경 부분의 확인
 
 ![image](https://user-images.githubusercontent.com/2344829/217416636-46657225-90f2-44fa-900f-bae53f13e969.png)
 
@@ -201,6 +206,7 @@
 
 
 ![image](https://user-images.githubusercontent.com/2344829/217442358-7ca7d132-6c4a-4439-8415-c30622b125b8.png)
+
 
 ![image](https://user-images.githubusercontent.com/2344829/217442482-d09e678e-090a-417e-b85f-49fb28ac3b77.png)
 
